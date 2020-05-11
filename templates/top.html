@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/css/top.css" rel="stylesheet">
+    <link href="/static/css/flickity.css" rel="stylesheet">
+    <script type="text/javascript" src="/static/js/flickity.js"></script>
+    <script type="text/javascript" src="/static/js/top.js"></script>
+    <title>らぁ〜めん京(みやこ)</title>
+</head>
+<body>
+    <div class="flickity-syncer">
+        <img src="/static/images/ramen_images-1.png">
+        <img src="/static/images/hiyashi-ramen.jpg">
+        <img src="/static/images/vegi-ramen.jpg">
+        <img src="/static/images/curry-ramen.jpg">
+    </div>
+
+    <div class="container">
+
+    <div class="sp_info">
+        <div id="sp_title">重要なお知らせ</div>
+        <a id="sp_detail" href="{{url_for('sp_info')}}" target="_blank" rel="noopener noreferrer">新型コロナウイルス感染防止に向けた取り組みについて</a>
+    </div>
+    <div class="about">
+        <div id="about_title"><img src="/static/images/wow-miyako.png">の３つのこだわり</div>
+        <a id="about_detail">正統派京都ラーメンの流れを受け継ぐ『らぁ～めん京（みやこ）』では、<p>訪れるお客様を京都らしいほっこりとした雰囲気の中でお迎えさせていただきます。</p></a>
+    </div>
+    <div class="flex-box">
+        <span class="box-img">
+            <img class="flex-item" src="/static/images/atomosphere.jpg">
+            <p>空間</p>
+        </span>
+        <span class="box-img">
+            <img class="flex-item" src="/static/images/img02.jpg">
+            <p>麺</p>
+        </span>
+        <span class="box-img">
+            <img class="flex-item" src="/static/images/img03.jpg">
+            <p>スープ</p>
+        </span>
+    </div>
+
+    <div class="menu">
+        <div id="menu_title">メニュー</div>
+        <a id="menu_detail">おすすめメニュー</a>
+
+        <div class="menu-item">
+            <div class="card card-skin">
+                <div class="card__imgframe"></div>
+                <div class="card__textbox">
+                    <div class="card__titletext">京(みやこ)<p>らぁ〜めん</p></div>
+                    <div class="card__overviewtext">¥720</div>
+                </div>
+            </div>
+
+            <div class="card card-skin">
+                <div class="card__imgframe"></div>
+                <div class="card__textbox">
+                    <div class="card__titletext">日替わりランチ</div>
+                    <div class="card__overviewtext">¥720</div>
+                </div>
+            </div>
+
+
+            <div class="card card-skin">
+                <div class="card__imgframe"></div>
+                <div class="card__textbox">
+                    <div class="card__titletext">彩りベジタリめん</div>
+                    <div class="card__overviewtext">¥880</div>
+                </div>
+            </div>
+
+            <div class="card card-skin">
+                <div class="card__imgframe"></div>
+                <div class="card__textbox">
+                    <div class="card__titletext">「ぎをん鶏白湯」<p>の濃厚カレーらーめん</p></div>
+                    <div class="card__overviewtext">¥720</div>
+                </div>
+            </div>
+
+        </div> <!-- menu-item -->
+    </div> <!-- menu -->
+
+    <div class="shop">
+    <div id="shop_title">店舗情報</div>
+    <a id="shop_detail"></a>
+        <div class="shop-item">
+            <div class="card card-skin">
+                <div class="card__imgframe"></div>
+                <div class="card__textbox">
+                    <div class="card__titletext">お店を探す</div>
+                </div>
+            </div>
+        </div> <!-- shop-item -->
+    </div> <!-- shop -->
+
+    <div class="info">
+        <div id="info_title">お知らせ</div>
+        <a id="info_detail"></a>
+        <div class="info-item">
+            <a id="info-item-detail"><p id="info-item-title">2020-4-16</p>冷やし中華 開始のお知らせ</a>
+            <a id="info-item-detail"><p id="info-item-title">2020-4-1</p>彩りベジタリめん 開始のお知らせ</a>
+            <a id="info-item-detail"><p id="info-item-title">2020-3-1</p>「ぎをん鶏白湯」の濃厚カレーらーめん 開始のお知らせ</a>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <footer>
+                <a>メニュー</a>
+                <a>キャンペーン</a>
+                <a>お店情報</a>
+                <p>Copyright(C)京都熟成細麺　らぁ〜めん京（みやこ）All Rigths Reserved.</p>
+            </footer>
+        </div>
+    </div>
+<script src="/static/js/top.js"></script>
+</body>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,700&display=swap&subset=japanese" rel="stylesheet">

@@ -1,0 +1,20 @@
+.sp-link {
+    text-decoration: underline;
+    color: rgb(45, 45, 45);
+}
+
+.sp-link:hover {color: #5f6c7b;}
+.sp-link:visited {color: rgb(45, 45, 45);}
+
+#sp-link {
+    text-decoration: underline;
+    color: rgb(45, 45, 45);
+}
+
+#sp-link:hover {color: #5f6c7b;}
+#sp-link:visited {color: rgb(45, 45, 45);}
+
+body {
+    color: rgb(45, 45, 45);
+    padding-top: 60px;
+}

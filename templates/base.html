@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/static/icon/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/custom.css">
+</head>
+<body>
+<div class="nav-head">
+    <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label id="nav-open" for="nav-input"><span></span></label>
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+            <ul>
+                <li><a href="{{url_for('top')}}"><i class="fas fa-home fa-log"> トップ</i></a></li>
+                <li id="nav-title">らぁーめん京(みやこ)</li>
+                <li><a href="{{url_for('sp_info')}}"><i class="fas fa-money-bill-wave-alt fa-log"> 給与計算</i></a></li>
+                <li><a href="{{url_for('sp_info')}}"><i class="fas fa-tachometer-alt fa-log"> 来客・売上ダッシュボード</i></a></li>
+                <li><a href="{{url_for('sp_info')}}"><i class="fas fa-cog fa-log"> 設定</i></a></li>
+            </ul>
+        </div>
+    </div>
+    <h3 id="miyako-title" class="my-0 mr-md-auto"><a href="{{url_for('top')}}"><img src="/static/images/miyako-1.png"></a></h3>
+
+    <div class="pc-nav-content">
+        <ul>
+            <li><a href="{{url_for('top')}}">トップ</a></li>
+            <li><a href="{{url_for('sp_info')}}">メニュー</a></li>
+            <li><a href="{{url_for('sp_info')}}">こだわり</a></li>
+            <li><a href="{{url_for('sp_info')}}">店舗情報</a></li>
+            <li><a href="{{url_for('sp_info')}}">お知らせ</a></li>
+            <li><a href="{{url_for('sp_info')}}">採用情報</a></li>
+        </ul>
+    </div>
+
+    <nav id="Nav" class="my-2 my-md-0 mr-md-3"></nav>
+</div>
+
+<div class="mt-3">
+    {% block body %}{% endblock %}
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+</body>
+</html>
