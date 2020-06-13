@@ -1,4 +1,5 @@
 # らぁ〜めん京のホームページ(製作中)
+今後は、EC-CUBEでECサイトをAWS上で運用していく予定
 
 ![](https://i.imgur.com/dzeV28N.png)
 
